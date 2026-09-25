@@ -19,6 +19,15 @@ irm https://raw.githubusercontent.com/elisa-rivadeneira/ai-build-lab-skills/main
 curl -fsSL https://raw.githubusercontent.com/elisa-rivadeneira/ai-build-lab-skills/main/install.sh | bash
 ```
 
+**Si en Windows sale un error mencionando "execution policy" o "scripts is disabled"**
+(pasa en algunas computadoras de colegios/empresas con seguridad más estricta), usar esta
+versión en su lugar — hace lo mismo, pero permite el script solo por esa vez, sin cambiar
+ninguna configuración permanente de la computadora:
+
+```powershell
+powershell -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/elisa-rivadeneira/ai-build-lab-skills/main/install.ps1 | iex"
+```
+
 Esto copia los Skills a la carpeta personal de Claude Code (`~/.claude/skills/` en Mac/Linux,
 `C:\Users\<usuario>\.claude\skills\` en Windows). Se hace una sola vez por computadora — a
 partir de ahí funciona automáticamente en cualquier proyecto nuevo.

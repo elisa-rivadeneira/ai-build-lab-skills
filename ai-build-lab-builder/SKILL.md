@@ -1,6 +1,6 @@
 ---
 name: ai-build-lab-builder
-description: Builds and deploys a complete small-business web app (Next.js + Supabase + Vercel) from a client specification prompt — the kind produced by a ChatGPT "consultant" interview together with one or more reference screenshot/mockup images, where the prompt describes functionality and appearance but never mentions a tech stack. Use this skill whenever the user pastes a software/app specification (often long, structured, and prescriptive about sections, behavior and visual design) together with reference image(s), especially if they mention it came from a client consultation, a mockup, an "AI Build Lab" course, or is described as a "prompt" for building an app — even if they never say the words Next.js, Supabase, React, database, or deploy. Also use it whenever the user is clearly a non-technical small-business owner or student who needs an app built end-to-end, including plain-language guidance through every technical step (terminal, GitHub, Supabase, Vercel), without assuming prior programming knowledge.
+description: Builds and deploys a complete small-business web app (Next.js + Supabase + Vercel) from a client specification prompt — the kind produced by a ChatGPT "consultant" interview together with one or more reference screenshot/mockup images, where the prompt describes functionality and appearance but never mentions a tech stack. Use this skill whenever the user pastes a software/app specification (often long, structured, and prescriptive about sections, behavior and visual design) together with reference image(s), especially if they mention it came from a client consultation, a mockup, an "AI Build Lab" course, or is described as a "prompt" for building an app — even if they never say the words Next.js, Supabase, React, database, or deploy. Also use it whenever the user is clearly a non-technical small-business owner or student who needs an app built end-to-end, including plain-language guidance through every technical step (terminal, GitHub, Supabase, Vercel), without assuming prior programming knowledge. IMPORTANT — match the specification prompt's language everywhere: most prompts are in Spanish (students and their clients are Spanish-speaking), so both the conversation with the student AND every piece of user-facing text in the built app (buttons, titles, messages, content) must be in that same language, never defaulted to English.
 ---
 
 # AI Build Lab — Constructor de apps (Next.js + Supabase + Vercel)
@@ -24,6 +24,24 @@ Cuando actives esta skill:
 3. Aplica el stack de la sección siguiente por defecto. No lo cambies ni lo discutas con el
    estudiante salvo que él lo pida explícitamente o tenga una razón real (ver "Por qué este
    stack").
+
+## Idioma: de la app también, no solo del chat
+
+El idioma del prompt de especificación (normalmente español, ya que el consultor es un
+ChatGPT en español y el cliente final también lo es) define **dos cosas, no solo una**:
+
+1. En qué idioma le hablas al estudiante (esto ya lo cubre la sección siguiente).
+2. **En qué idioma queda todo el texto visible de la aplicación que construyes** — títulos,
+   botones, mensajes de error, textos de ejemplo, nombres de página, absolutamente todo lo
+   que va a ver el usuario final del sitio. Si el prompt está en español, la app entera
+   (interfaz, contenido, mensajes) va en español, sin excepción — no lo dejes en inglés "por
+   costumbre" del código. Los nombres internos del código (variables, funciones, nombres de
+   archivo) sí pueden quedar en inglés como es la convención normal de programación — eso no
+   lo ve nadie más que quien programa, así que no afecta al cliente final.
+
+Si por alguna razón el prompt no deja claro el idioma esperado de la app (por ejemplo, un
+negocio que explícitamente atiende clientes en otro idioma), pregúntaselo al estudiante en
+vez de asumir inglés por defecto.
 
 ## Cómo comunicarte con el estudiante
 
